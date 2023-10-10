@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/october7timeline/static/css/main.969319d5.css",
-    "main.js": "/october7timeline/static/js/main.9423595e.js",
-    "static/js/787.d1d4a2c2.chunk.js": "/october7timeline/static/js/787.d1d4a2c2.chunk.js",
-    "static/media/logo.svg": "/october7timeline/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/october7timeline/index.html",
-    "main.969319d5.css.map": "/october7timeline/static/css/main.969319d5.css.map",
-    "main.9423595e.js.map": "/october7timeline/static/js/main.9423595e.js.map",
-    "787.d1d4a2c2.chunk.js.map": "/october7timeline/static/js/787.d1d4a2c2.chunk.js.map"
+    "main.css": "/CharavotBarzel/static/css/main.969319d5.css",
+    "main.js": "/CharavotBarzel/static/js/main.314abd4d.js",
+    "static/js/787.d1d4a2c2.chunk.js": "/CharavotBarzel/static/js/787.d1d4a2c2.chunk.js",
+    "static/media/logo.svg": "/CharavotBarzel/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/CharavotBarzel/index.html",
+    "main.969319d5.css.map": "/CharavotBarzel/static/css/main.969319d5.css.map",
+    "main.314abd4d.js.map": "/CharavotBarzel/static/js/main.314abd4d.js.map",
+    "787.d1d4a2c2.chunk.js.map": "/CharavotBarzel/static/js/787.d1d4a2c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.969319d5.css",
-    "static/js/main.9423595e.js"
+    "static/js/main.314abd4d.js"
   ]
 }
