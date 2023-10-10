@@ -1,5 +1,5 @@
 .App {
-  height: 12000px;
+  height: 15000px;
   width: 100vw;
   background: rgb(2, 2, 2);
   display: inline-flex;
@@ -15,14 +15,14 @@
 
 .dateText {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: white;
   opacity: 0.9;
 }
 
 .timerText {
   margin: 0;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #FF5D5D;
   opacity: 0.6;
 }
@@ -44,6 +44,20 @@
   position: fixed;
   top: 2%;
   color: white;
+}
+
+.TwitterBtn {
+  height: 7.5vh;
+  width: 20vw;
+  cursor: pointer;
+  border: none;
+  /* border-radius: 1.5rem; */
+  background: none;
+  /* background: linear-gradient(90deg, #06F 0%, #A1C7FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* background-color: white !important; */
 }
 
 .noOpacity {

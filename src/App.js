@@ -15,7 +15,7 @@ const timeline = [
   
   {day: "7", time: 23640, type: "normal", description: '3 Million people wake up to 5,000 rockets shot at Israel, No one knows why.'},
   
-  {day: "7", time: 23700, type: "normal", description: '1,000 terrorists invade into israel'},
+  {day: "7", time: 24300, type: "normal", description: '1,000 terrorists invade into israel'},
 
   {day: "7", time: 25200, type: "normal", description: 'Terrorists are taking control of dozens of cities and human settlements. Terrorists are getting into the Israeli party, and starts to mass-shoot at over 500 citizens'},
 
@@ -24,6 +24,14 @@ const timeline = [
   {day: "7", time: 26100, type: "normal", description: 'Hundreds of people were taken hostage by the terrorists, Terrorists are starting to shoot at citizens.'},
 
   {day: "7", time: 26700, type: "normal", description: 'Families starting to hide in their protected rooms, praying to not getting killed.'},
+  
+  {day: "7", time: 27200, type: "normal", description: 'Citizens are praying for themselves, terrorists mass shooting across Southern Israel, as Hamas are shooting bombs nonstop across Israel'},
+  
+  {day: "7", time: 27800, type: "normal", description: 'This is what happened in the first hour of the morning.'},
+  
+  {day: "7", time: 28200, type: "question", description: 'Do you really support a terror organization?'},
+  
+  {day: "7", time: 29200, type: "buttons", description: null},
 ]
 
 function App() {
@@ -32,6 +40,7 @@ function App() {
   const [seconds, setTimer] = useState(-7150);
   const [currentTimerlineObject, setCurrentTimelineObject] = useState(timeline[0]);
   const [scrollMultiplier, setScrollMultiplier] = useState(3);
+  const [descriptionSize, setDescriptionSize] = useState(null);
   const [scrollPosition, setScrollPosition] = useState(200);
   const [showDesc, setShowDesc] = useState(true);
   const [day, setDay] = useState(6);
@@ -68,6 +77,11 @@ function App() {
           }
           setCurrentTimelineObject(e);
           setTimeout(() => setShowDesc(true), 600);
+          if(e.type == "question") {
+            setDescriptionSize((position - 11784.2421875) / 16 + 32);
+          } else {
+            setDescriptionSize(null);
+          }
           found = true;
           // console.log(e);
         }
@@ -95,7 +109,7 @@ function App() {
       <div className='main'>
         {/* <p style={{color: "white"}}>{seconds}</p> */}
         <TimerComponent result={result} day={day} />
-        <DescriptionComponent showDesc={showDesc} content={currentTimerlineObject} />
+        <DescriptionComponent size={descriptionSize} showDesc={showDesc} content={currentTimerlineObject} />
       </div>
     </div>
   );
