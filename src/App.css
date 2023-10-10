@@ -37,6 +37,7 @@
   opacity: 0.3;
   transition-duration: 600ms;
   /* margin-top: -5vh; */
+  float: right;
 }
 
 .title {
@@ -62,4 +63,17 @@
 
 .noOpacity {
   opacity: 0;
+  /* transition-duration: 600ms;  */
+  animation-name: example;
+  animation-duration: 600ms;
+}
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 0.3;}
+}
+
+@keyframes examplefull {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

@@ -5,7 +5,7 @@ import DescriptionComponent from './components/Description';
 import { useEffect, useState } from "react";
 
 const timeline = [
-  {day: "6", time: -7150, type: "normal", description: '"Supernova" festival begins, an event that takes place once a year and is considered to be one of the most important electronic music communities in Israel'},
+  {day: "6", time: -7150, type: "normal", description: 'Music festival begins, an event that takes place once a year and is considered to be one of the most important electronic music communities in Israel'},
 
   {day: "7", time: 0, type: "normal", description: '"Simchat Torah", one of the holiest Jewish days on the calendar.'},
   
@@ -31,7 +31,7 @@ const timeline = [
   
   {day: "7", time: 28200, type: "question", description: 'Do you really support a terror organization?'},
   
-  {day: "7", time: 29200, type: "buttons", description: null},
+  {day: "7", time: 30200, type: "buttons", description: null},
 ]
 
 function App() {
